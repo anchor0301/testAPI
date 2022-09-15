@@ -19,7 +19,7 @@ public class test {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("경상남도 계절 관광 추천 프로그램입니다. \n");
 		System.out.print(" 1. 봄 \n 2.여름\n 3.가을\n 4.겨울 \n\n여행가고싶은 계절을 입력해주세요 : ");
-		
+
 		int Season = sc.nextInt();
 		if (Season == 1) {
 			System.out.println("봄, 여긴 어떤가요?");
@@ -111,18 +111,22 @@ public class test {
 					if (Season == 1 && Ss.equals("봄")) {
 						System.out.print((++j) + "  -  ");
 						System.out.println((String) jsonObj.get("data_title"));
+						System.out.println("    " + (String) jsonObj.get("user_address") + "\n");
 					} else if (Season == 2 && Ss.equals("여름")) {
 
 						System.out.print((++j) + "  -  ");
 						System.out.println((String) jsonObj.get("data_title"));
+						System.out.println("    " + (String) jsonObj.get("user_address") + "\n");
 					} else if (Season == 3 && Ss.equals("가을")) {
 
 						System.out.print((++j) + "  -  ");
 						System.out.println((String) jsonObj.get("data_title"));
+						System.out.println("    " + (String) jsonObj.get("user_address") + "\n");
 					} else if (Season == 4 && Ss.equals("겨울")) {
 
 						System.out.print((++j) + "  -  ");
 						System.out.println((String) jsonObj.get("data_title"));
+						System.out.println("    " + (String) jsonObj.get("user_address") + "\n");
 					} else {
 					}
 //					System.out.print((String) jsonObj.get("category_name2") + "   ");\
